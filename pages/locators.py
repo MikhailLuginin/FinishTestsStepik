@@ -9,9 +9,10 @@ class LoginPageLocators():
 
 class ProductPageLocators():
     BUTTON_BASKET = (By.CLASS_NAME, "btn.btn-lg.btn-primary.btn-add-to-basket") #Добавить в корзину
-    ADD_TO_BASKET_TITLE = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div")#Название книги в корзине
+    ADD_TO_BASKET_TITLE = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div > strong")#Название книги в корзине
     PRICE_BOOK = (By.CSS_SELECTOR, "#content_inner > article > div.row > div.col-sm-6.product_main > p.price_color") #(By.CLASS_NAME, "price_color")#Цена книги
     TITLE_BOOK = (By.CSS_SELECTOR, "h1")#Название книги
-    BASKET_PRICE = (By.CLASS_NAME, "basket-mini.pull-right.hidden-xs")#Цена книги в корзине
+    BASKET_PRICE = (By.CSS_SELECTOR, "#messages > div.alert.alert-safe.alert-noicon.alert-info.fade.in > div > p:nth-child(1) > strong")#Цена книги в корзине
+
 
 
