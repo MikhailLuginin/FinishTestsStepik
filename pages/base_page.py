@@ -1,5 +1,3 @@
-import pytest
-from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 
 class BasePage():
@@ -20,3 +18,4 @@ class BasePage():
         except (NoSuchElementException):
             return False
         return True
+
