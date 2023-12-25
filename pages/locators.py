@@ -6,6 +6,13 @@ class MainPageLocators():
 class LoginPageLocators():
     ID_LOGIN = (By.CSS_SELECTOR, "#login_form")
     ID_REGISTRATION = (By.CSS_SELECTOR, "#register_form")
+    REGISTER_EMAIL = (By.CSS_SELECTOR, "#id_registration-email")
+    REGISTER_PASSWORD1 = (By.CSS_SELECTOR, "#id_registration-password1")
+    REGISTER_PASSWORD2 = (By.CSS_SELECTOR, "#id_registration-password2")
+    REGISTER_BUTTON = (By.CSS_SELECTOR, "#register_form > button")
+    ICON_USER = (By.CSS_SELECTOR, "#top_page > div.navbar-collapse.account-collapse.collapse > div > ul > li:nth-child(1) > a")
+    EMAIL_USER = (By.CSS_SELECTOR, "#default > div.container-fluid.page > div > div > div > table > tbody > tr:nth-child(2) > td")
+
 
 class ProductPageLocators():
     BUTTON_BASKET = (By.CLASS_NAME, "btn.btn-lg.btn-primary.btn-add-to-basket") #Добавить в корзину
@@ -18,6 +25,7 @@ class ProductPageLocators():
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class BasketPageLocators():
     EMPTY_BASKET = (By.CSS_SELECTOR, "#content_inner")

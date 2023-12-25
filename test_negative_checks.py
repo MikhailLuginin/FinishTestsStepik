@@ -1,5 +1,4 @@
 from .pages.product_page import ProductPage
-import time
 import pytest
 
 link = "http://selenium1py.pythonanywhere.com/ru/catalogue/hacking-exposed-wireless_208/"
